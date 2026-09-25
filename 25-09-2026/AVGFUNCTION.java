@@ -40,6 +40,7 @@ class Main
         Main obj=new Main();
         System.out.println("\nFunction Starts");
         obj.inputData();
+        obj.map().forEach((subject, mark) -> System.out.println(subject + ": " + mark));
         System.out.println("\nStarts Calculation");
         int avg=obj.average();
         System.out.println("Average Marks: "+avg);
